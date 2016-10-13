@@ -1,0 +1,53 @@
+<section>
+    <center><h1>List All TV Show Stored in the System</h1></center>
+
+    <div ng-if="showMessage == 'show'" class="{{TypeMessage}}">
+        <center><strong>{{message}}</strong></center> 
+    </div>
+</section>
+
+<section>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th>Country</th>   
+                        <th>Seasons</th>
+                        <th>Genere</th>
+                        <th>Summary</th>
+                        <th>Options</th>        
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="list in listTvsShows">
+                            <td>{{list.title}}</td>
+                            <td>{{list.year}}</td>
+                            <td>{{list.country}}</td>
+                            <td>{{list.seasons}}</td>
+                            <td>{{list.genre}}</td>
+                            <td>{{list.summary}}</td>
+                            <td>
+                                <div class="form-group">
+                                    <button class="btn btn-primary btn-xs" ng-click="editTvShow(list._id)">Update</button>
+                                    <button class="btn btn-danger btn-xs" ng-click="deleteTvShow(list._id)">Delete</button>
+                                </div>
+
+                            </td>
+                        </tr>        
+                    </tbody>
+                    <tfoot>
+                        <th>Title</th>
+                        <th>Year</th>
+                        <th>Country</th>
+                        <th>Seasons</th>
+                        <th>Genere</th>
+                        <th>Summary</th>
+                        <th>Options</th> 
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div> 
+</section>
