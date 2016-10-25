@@ -1,6 +1,8 @@
 # TVShows-MEAN
 
-Install
+Objetivo del proyecto: es una aplicacion de tipo CRUD (Create-Read-Update-Delete) acerca de lista de programas televisivos, el objetivo principal es brindarle una interfaz visual sin la necesidad de utilizar extensiones de google chrome al momento que estaba aprendiendo el lenguaje node js
+
+Para instalar y probar hacer lo siguiente:
 
 -Clonar el repositorio.
 
